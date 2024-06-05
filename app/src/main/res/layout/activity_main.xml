@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home"
+        android:contentDescription="@string/recycle_logo" />
+
+    <!-- Welcome Message with Icon -->
+
+    <!-- Trash Detection and PickUp Buttons -->
+
+    <LinearLayout
+        android:id="@+id/welcomeMessageLayout"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backgroundImage"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-38dp"
+        android:background="@drawable/rounded_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/welcomeIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/welcome_icon"
+            android:src="@drawable/ic_avatar" />
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Hello, Selamat datang di TrashHub.\nJangan lupa daur ulang sampah mu hari ini!"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeMessageLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/trashDetectionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ADDCB5"
+            android:drawableTop="@drawable/ic_trash_detection"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Trash Detection"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/trashPickUpButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ADDCB5"
+            android:drawableTop="@drawable/ic_trash_pickup"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Trash PickUp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#388E3C"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

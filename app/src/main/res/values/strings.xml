@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TrashHub</string>
+    <string name="image_description" />
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="recycle_logo">Recycle Logo</string>
+    <string name="welcome_message">Hello, Selamat datang di TrashHub\nJangan lupa daur ulang sampah mu hari ini!</string>
+    <string name="trash_detection">Trash Detection</string>
+    <string name="trash_pickup">Trash PickUp</string>
+    <string name="home">Home</string>
+    <string name="news">News</string>
+    <string name="account">Account</string>
+    <string name="welcome_icon">avatar</string>
+</resources>
